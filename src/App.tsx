@@ -1,7 +1,7 @@
+import { Home } from "./home/home";
+
 export function App() {  
   return (
-    <>
-      <h1>Portfólio</h1>
-    </>
+    <Home />
   )
 }
