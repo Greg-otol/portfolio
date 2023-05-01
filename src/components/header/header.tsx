@@ -1,51 +1,63 @@
 import {
-  A,
-  Article,
+  HeaderA,
+  HeaderArticle,
   HeaderContainer,
-  Img,
-  Li,
-  Name,
-  Nav,
-  Section,
-  Ul,
+  HeaderImg,
+  HeaderLi,
+  HeaderName,
+  HeaderNav,
+  HeaderSection,
+  HeaderUl,
 } from "../header/style_header";
 import my_photo from "../../assets/img/eu.jpg";
 
 export function Header() {
   return (
     <HeaderContainer>
-      <Section>
-        <Article>
-          <Img src={my_photo} />
-          <Name>Gregório Neto</Name>
-        </Article>
-
-        <Article>
-          <Nav>
-            <Ul>
-              <Li>
-                <A
+      <HeaderSection>
+        <HeaderArticle>
+          <HeaderImg src={my_photo} />
+          <HeaderName>Gregório Neto</HeaderName>
+        </HeaderArticle>
+        <HeaderArticle>
+          <HeaderNav>
+            <HeaderUl>
+              <HeaderLi>
+                <HeaderA
+                  href="https://api.whatsapp.com/send?phone=5583999158969"
+                  target="blank"
+                >
+                  Whatsapp
+                </HeaderA>
+              </HeaderLi>
+              <HeaderLi>
+                <HeaderA
                   href="https://www.linkedin.com/in/gregoriogeotol/"
                   target="blank"
                 >
                   LinkedIn
-                </A>
-              </Li>
-              <Li>
-                <A href="https://github.com/Greg-otol" target="blank">
+                </HeaderA>
+              </HeaderLi>
+              <HeaderLi>
+                <HeaderA 
+                  href="mailto:gregoriogrgeotavia@hotmail.com" 
+                  target="blank"
+                >
+                  Email
+                </HeaderA>
+              </HeaderLi>
+              <HeaderLi>
+                <HeaderA 
+                  href="https://github.com/Greg-otol" 
+                  target="blank"
+                >
                   GitHub
-                </A>
-              </Li>
-              <Li>
-                <A href="#">Contato</A>
-              </Li>
-              <Li>
-                <A href="#">Sobre</A>
-              </Li>
-            </Ul>
-          </Nav>
-        </Article>
-      </Section>
+                </HeaderA>
+              </HeaderLi>
+            </HeaderUl>
+          </HeaderNav>
+        </HeaderArticle>
+      </HeaderSection>
     </HeaderContainer>
   );
 }

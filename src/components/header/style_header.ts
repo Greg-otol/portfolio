@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.header`
+export const HeaderContainer = styled.header``;
 
-`;
-
-export const Section = styled.section`
+export const HeaderSection = styled.section`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 10px 0 10px;
   width: 100%;
@@ -19,7 +17,7 @@ export const Section = styled.section`
   }
 `;
 
-export const Article = styled.article`
+export const HeaderArticle = styled.article`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -29,30 +27,30 @@ export const Article = styled.article`
   gap: 10px;
 `;
 
-export const Img = styled.img`
+export const HeaderImg = styled.img`
   width: 60px;
   height: 60px;
   border-radius: 50%;
 `;
 
-export const Name = styled.h2`
+export const HeaderName = styled.h2`
   font-size: 24px;
   font-weight: bold;
   color: white;
 `;
 
-export const Nav = styled.nav``;
+export const HeaderNav = styled.nav``;
 
-export const Ul = styled.ul`
+export const HeaderUl = styled.ul`
   display: flex;
   flex-direction: row;
   gap: 10px;
   list-style: none;
 `;
 
-export const Li = styled.li``;
+export const HeaderLi = styled.li``;
 
-export const A = styled.a`
+export const HeaderA = styled.a`
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
